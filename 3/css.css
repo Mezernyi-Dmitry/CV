@@ -1,0 +1,226 @@
+* /*универсальный селектор, который позволяет убрать стандартрые отступы, которые добавляются браузерами*/{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	width: 940px;
+	margin: 0 auto;
+	font-family: 'Neucha', sans-serif;
+}
+
+p{
+	font-size: 18px;
+	line-height: 120%;
+}
+
+h1{
+	font-size: 34px;
+}
+h2 {
+	font-size: 30px;
+}
+h3{
+	font-size: 40px;
+	text-align: center;
+}
+
+.left, .right{
+	width: 880px;
+	padding: 30px;
+	height: 280px;
+	border-radius: 10px;
+	margin-top: 25px;
+}
+
+.left{background-color: #ffadc2}
+.right{background-color: #adc2ff}
+
+.left img{float: right;}
+.right img{float: left;}
+
+header{
+	background: url(img/logo.png) no-repeat, url(img/bgr.png);
+	background-position: 30px 20px, top left;
+	width: 940px;
+	height: 624px;
+	position: relative;
+}
+header h1{
+	position: absolute;
+	top: 470px;
+	left: 20px;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 10px;
+}
+
+nav{
+	width: 100%;
+	background-color: rgba (255, 255, 255, 0.6);
+	position: absolute;
+	bottom: 0px;
+	height: 60px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	line-height: 60px;
+	display: inline-block;
+}
+
+.link{
+	margin-left: 55px;
+}
+
+footer{
+	width: 100%;
+	position: relative;
+	height: 220px;
+	margin-top: 60px;
+}
+
+.social{
+	width: 300px;
+}
+
+header .social{
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+footer .social{
+	margin: 0 auto;
+
+}
+
+.social a{
+	margin: 27px 20px 0 0;
+}
+
+form{
+	position: absolute;
+	top: 400px;
+	right: 15px;
+	width: 325px;
+	height: 140px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+form h3{
+	font-size: 18pt;
+	font-variant: small-caps;
+}
+
+input{
+	padding: 0 15px;
+	border-radius: 15px;
+	height: 30px;
+	width: 275px;
+	border: 0;
+	outline: 0;
+	margin-bottom: 4px;
+}
+
+input[type=submit]{
+	width: 100px;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+@media all and (max-width: 640px) {
+	body{
+		width: 100%;
+	}
+
+	header{
+		width: 100%;
+	}
+
+	header nav{
+		position: fixed;
+		top: 20px;
+		left: 10px;
+		width: 40px;
+		height: 2px;
+		border-radius: 10px;
+		padding-top: 40px;
+		background: url(img/menu.png) no-repeat center rgba(255, 255, 255, 0.6);
+		background-size: cover;
+		z-index: 10;
+	}
+
+	header nav ul{
+		position: absolute;
+		top: 50px;
+		margin: -8px 0 0 0;
+		padding: 0;
+		background: rgba(255, 255, 255, 0.6);
+		border-radius: 10px;	
+	}
+
+	a{
+		display: block;
+	}
+
+	.link{
+		margin-left: 26px;
+		font-size: 16pt;
+		width: 120px;
+		
+	}
+
+	form{
+		top: 400px;
+		right: calc(50% - 153px);
+	}
+
+	.social{
+		width: auto;
+	}
+
+	.left, .right{
+		width: 90%;
+		height: auto;
+		text-align: center;
+	}
+
+	.left img, .right img{
+		width: 90%;
+		height: auto;
+		float: none;
+		margin: 20px auto;
+	}
+
+
+	footer > .social{
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	footer nav{
+		display: none;
+	}
+
+	nav ul{
+		display: none;
+	}
+
+	nav:hover ul{
+		display: block;
+	}
+
+	header h1{
+		position: relative;
+		top: 260px;
+		left: 0px;
+		text-align: center;
+		background-color: rgba(0,0,0,0.25);
+		border-radius: 10px;
+	}
+	
+}
