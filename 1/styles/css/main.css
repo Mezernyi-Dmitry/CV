@@ -104,7 +104,7 @@ footer {
     border-radius: 5px; }
   footer input[type=submit] {
     margin-top: 4px;
-    margin-left: -108px;
+    /*margin-left: -108px;*/
     width: 88px;
     height: 30px;
     color: white;
@@ -115,7 +115,7 @@ footer {
     outline: 0; }
   footer .links {
     background-color: #283645;
-    marfin-top: 75px;
+    margin-top: 75px;
     height: 82px;
     line-height: 82px;
     color: #707e8c; }
